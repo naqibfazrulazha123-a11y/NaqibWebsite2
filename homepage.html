@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmad Naqib | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Digital Clock -->
+    <div class="digital-clock" id="digitalClock">00:00:00</div>
+
+    <!-- Header and Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div>
+                    <div class="logo">Ahmad Naqib</div>
+                    <div class="tagline">IMD318 Individual Project</div>
+                </div>
+                <div class="nav-content">
+                    <div class="hamburger" id="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="homepage.html" class="active">Home</a></li>
+                        <li><a href="biodata.html">Biodata</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="experience.html">Experience</a></li>
+                        <li><a href="hobbies.html">Hobbies</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <!-- IMAGE MAP HERE -->
+            <img src="images/myphoto/115.png"
+                 alt="Ahmad Naqib" class="profile-img" 
+                 usemap="#profilemap">
+            
+            <map name="profilemap">
+                <area shape="circle" coords="110,110,100" 
+                      alt="My Face" 
+                      href="biodata.html"
+                      title="Click to view my Biodata">
+                <area shape="rect" coords="0,180,220,220" 
+                      alt="My Body" 
+                      href="experience.html"
+                      title="Click to view my Experience">
+            </map>
+            
+            <h1>Hey there! I'm Ahmad Naqib 👋</h1>
+            <p>Final Year IT Student | UiTM Rembau | Born in KL, Raised in Shah Alam</p>
+            <p style="font-size: 1.1rem; margin-top: 1rem;">Click on my photo to explore more about me!</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Welcome Message -->
+        
+        <section class="content-section" style="text-align: center; background: linear-gradient(135deg, #f8fbff 0%, #eef5ff 100%);">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <h2 style="border: none; font-size: 2.5rem; color: #4a8cff;">Welcome to My Personal Website! 🎉</h2>
+                <p style="font-size: 1.3rem; line-height: 1.8; margin-top: 1.5rem;">
+                    Welcome to my website! I hope through this site, you can get to know more about me, 
+                    my journey, and what I'm passionate about. This website is created as part of my 
+                    <strong>IMD318 Individual Project</strong> at UiTM.
+                </p>
+                <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <div style="background: white; padding: 1rem 1.5rem; border-radius: 25px; display: inline-flex; align-items: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <i class="fas fa-map-marker-alt" style="color: #4a8cff; margin-right: 10px;"></i>
+                        <span>Born in KL, raised in Shah Alam</span>
+                    </div>
+                    <div style="background: white; padding: 1rem 1.5rem; border-radius: 25px; display: inline-flex; align-items: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <i class="fas fa-users" style="color: #4a8cff; margin-right: 10px;"></i>
+                        <span>Second of six siblings</span>
+                    </div>
+                    <div style="background: white; padding: 1rem 1.5rem; border-radius: 25px; display: inline-flex; align-items: center; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <i class="fas fa-graduation-cap" style="color: #4a8cff; margin-right: 10px;"></i>
+                        <span>Final sem IT student</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simple Music Player -->
+<div style="margin: 2rem auto; max-width: 450px; text-align: center;">
+    <div style="background: white; padding: 1.5rem; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border: 2px solid #e6f2ff;">
+        <h4 style="color: #2c5aa0; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-music" style="color: #4a8cff; margin-right: 10px;"></i>
+            Background Music
+        </h4>
+        
+        <!-- Audio Player -->
+        <audio id="bgMusic" controls style="width: 100%; border-radius: 25px;">
+            <source src="audio/Calum Scott - You Are The Reason (Official Video).mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        
+        <p style="margin-top: 0.8rem; font-size: 0.9rem; color: #666;">
+            <i class="fas fa-play-circle" style="color: #4a8cff;"></i>
+            Play some music while browsing
+        </p>
+    </div>
+</div>
+
+        <!-- Quick Navigation -->
+        <section class="content-section">
+            <h2>Explore My Website 🗺️</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <a href="biodata.html" style="text-decoration: none;">
+                    <div style="background: linear-gradient(135deg, #f8fbff 0%, #e6f2ff 100%); padding: 2rem; border-radius: 12px; text-align: center; transition: all 0.3s ease; border: 2px solid #e6f2ff;">
+                        <i class="fas fa-id-card" style="font-size: 2.5rem; color: #4a8cff; margin-bottom: 1rem;"></i>
+                        <h3 style="color: #2c5aa0;">Biodata</h3>
+                        <p style="color: #666;">My personal information</p>
+                    </div>
+                </a>
+                
+                <a href="education.html" style="text-decoration: none;">
+                    <div style="background: linear-gradient(135deg, #f8fbff 0%, #e6f2ff 100%); padding: 2rem; border-radius: 12px; text-align: center; transition: all 0.3s ease; border: 2px solid #e6f2ff;">
+                        <i class="fas fa-graduation-cap" style="font-size: 2.5rem; color: #4a8cff; margin-bottom: 1rem;"></i>
+                        <h3 style="color: #2c5aa0;">Education</h3>
+                        <p style="color: #666;">My academic journey</p>
+                    </div>
+                </a>
+                
+                <a href="experience.html" style="text-decoration: none;">
+                    <div style="background: linear-gradient(135deg, #f8fbff 0%, #e6f2ff 100%); padding: 2rem; border-radius: 12px; text-align: center; transition: all 0.3s ease; border: 2px solid #e6f2ff;">
+                        <i class="fas fa-briefcase" style="font-size: 2.5rem; color: #4a8cff; margin-bottom: 1rem;"></i>
+                        <h3 style="color: #2c5aa0;">Experience</h3>
+                        <p style="color: #666;">My activities & work</p>
+                    </div>
+                </a>
+                
+                <a href="family.html" style="text-decoration: none;">
+                    <div style="background: linear-gradient(135deg, #f8fbff 0%, #e6f2ff 100%); padding: 2rem; border-radius: 12px; text-align: center; transition: all 0.3s ease; border: 2px solid #e6f2ff;">
+                        <i class="fas fa-home" style="font-size: 2.5rem; color: #4a8cff; margin-bottom: 1rem;"></i>
+                        <h3 style="color: #2c5aa0;">Family</h3>
+                        <p style="color: #666;">Meet my family</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Quick Facts -->
+        <section class="content-section">
+            <h2>Quick Facts About Me ⚡</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm <strong>Ahmad Naqib bin Mohd Fazrul Azha</strong>, a 22-year-old final semester student pursuing my <strong>Diploma in Information Management</strong> at <strong>UiTM Negeri Sembilan, Rembau Campus</strong>.</p>
+                    
+                    <p>As the <strong>second child in a family of six siblings</strong>, I've learned the importance of sharing, responsibility, and being a good role model. I was born in Kuala Lumpur Hospital and grew up in the vibrant city of Shah Alam.</p>
+                    
+                    <p>When I'm not studying or working on assignments, you can find me involved in campus activities like <strong>PEERS Club</strong> where I serve as a facilitator, or practicing traditional martial arts with <strong>Hobin Fighter Silat club</strong>.</p>
+                </div>
+                <div class="about-highlights">
+                    <h3>At a Glance</h3>
+                    <ul>
+                        <li><i class="fas fa-id-badge"></i> <strong>Student ID:</strong> 2023626374</li>
+                        <li><i class="fas fa-user-graduate"></i> <strong>Class:</strong> CDIM1105D</li>
+                        <li><i class="fas fa-university"></i> <strong>University:</strong> UiTM Rembau</li>
+                        <li><i class="fas fa-book"></i> <strong>Program:</strong> Information Management</li>
+                        <li><i class="fas fa-calendar-alt"></i> <strong>Semester:</strong> 5 (Final)</li>
+                        <li><i class="fas fa-users"></i> <strong>Siblings:</strong> 2nd of 6</li>
+                        <li><i class="fas fa-city"></i> <strong>Hometown:</strong> Shah Alam</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3 style="margin-bottom: 1rem; font-size: 1.8rem;">Let's Connect! 🌟</h3>
+                
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/amadnqib/" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100001241183348" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="mailto:naqibfazrulazha123@gmail.com?subject=Help%20Request" title="Email Me">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                
+                <div class="assignment-info">
+                    <p><strong>IMD318: Individual Project</strong></p>
+                    <p>Student: Ahmad Naqib bin Mohd Fazrul Azha</p>
+                    <p>Student ID: 2023626374 | Class: CDIM1105D</p>
+                    <p>Faculty of Information Science, UiTM Negeri Sembilan</p>
+                </div>
+                
+                <div class="copyright">
+                    <p>© 2026 Ahmad Naqib. Created for IMD318 Individual Project.</p>
+                    <p>This website is created using HTML, CSS, and JavaScript only.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Navigation
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Digital Clock
+        function updateClock() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            
+            document.getElementById('digitalClock').textContent = 
+                `${hours}:${minutes}:${seconds}`;
+        }
+        
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // Image Map Alert
+        document.querySelector('.profile-img').addEventListener('click', function(e) {
+            if(e.target === this) {
+                alert("💡 Hint: Try clicking different parts of my photo! The face goes to Biodata, the body goes to Experience.");
+            }
+        });
+    </script>
+</body>
+</html>
